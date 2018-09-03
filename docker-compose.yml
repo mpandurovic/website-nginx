@@ -1,0 +1,8 @@
+version: '3'
+services:
+  nginx:
+    build: .
+    environment:
+     - NGINX_HOST_PORT
+    ports:
+     - "${NGINX_HOST_PORT}:80"
