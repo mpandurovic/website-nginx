@@ -6,3 +6,5 @@ services:
      - NGINX_HOST_PORT
     ports:
      - "${NGINX_HOST_PORT}:80"
+    volumes:
+     - "/home/marko/vsc-workspace:/var/www"
