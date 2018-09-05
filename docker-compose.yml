@@ -2,9 +2,6 @@ version: '3'
 services:
   nginx:
     build: .
-    environment:
-     - NGINX_HOST_PORT=80
-     - WWW_VOLUME=/var/www
     ports:
      - "${NGINX_HOST_PORT}:80"
     volumes:
