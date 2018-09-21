@@ -6,3 +6,6 @@ services:
      - "${NGINX_HOST_PORT}:80"
     volumes:
      - "${WWW_VOLUME}:/var/www"
+    network_mode: bridge
+    external_links:
+      - website_website_1
