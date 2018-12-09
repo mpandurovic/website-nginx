@@ -9,3 +9,4 @@ services:
     network_mode: bridge
     external_links:
       - website_website_1
+      - la-website_website_1
